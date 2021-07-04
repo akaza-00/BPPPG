@@ -2,6 +2,17 @@
 
 This repository contains the codes corresponding to study continous blood pressure estimation using PPG features.
 
+## Requirements
+Please install the following Python libraries:
+
+- hrv-analysis
+- biosppy
+- pyampd
+- scipy
+- mat73
+- sklearn
+- pandas
+- numpy
 
 ## Usage
  You can skip steps 1,2, and 3 and use the pre-extracted features.csv.
