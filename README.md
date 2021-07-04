@@ -3,7 +3,7 @@
 This repository contains the codes corresponding to study continous blood pressure estimation using PPG features.
 
 
-# Usage
+## Usage
  You can skip steps 1,2, and 3 and use the extracted features.csv.
  
  1- Download MIMIC II dataset (BP, ECG, PPG) from https://archive.physionet.org/mimic2/ and save as MATLAB matrices in "data" folder.
@@ -14,7 +14,7 @@ This repository contains the codes corresponding to study continous blood pressu
  
  4- Run BPEstimation.py to fit and test machine learning based models.
 
-# Citing this work
+## Citing this work
 Please use the following citation:
 ```
 Hasanzadeh, Navid, Mohammad Mahdi Ahmadi, and Hoda Mohammadzade. "Blood pressure estimation using photoplethysmogram signal and its morphological features." IEEE Sensors Journal 20, no. 8 (2019): 4300-4310.
