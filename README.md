@@ -20,7 +20,7 @@ Please install the following Python (3.8) libraries:
  You can skip steps 1,2, and 3 and use the pre-extracted features.csv.
  
  1-
- - Download [MIMIC II dataset](https://archive.physionet.org/mimic2/ ) (BP, ECG, PPG) and save as MATLAB matrices in "data" folder. (similar to [UCI BP dataset](https://archive.ics.uci.edu/ml/datasets/Cuff-Less+Blood+Pressure+Estimation))
+ - Download [MIMIC II dataset](https://archive.physionet.org/mimic2/ ) (BP, ECG, PPG) **raw signals** and save as MATLAB matrices into "data" folder. (similar to the matrices available in [UCI BP dataset](https://archive.ics.uci.edu/ml/datasets/Cuff-Less+Blood+Pressure+Estimation))
  
  or,
  
