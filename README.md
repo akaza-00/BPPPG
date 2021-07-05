@@ -14,11 +14,23 @@ Please install the following Python (3.8) libraries:
 - pandas
 - numpy
 - matplotlib
+- pickle
 
 ## Usage
  You can skip steps 1,2, and 3 and use the pre-extracted features.csv.
  
- 1- Download [MIMIC II dataset](https://archive.physionet.org/mimic2/ ) (BP, ECG, PPG) and save as MATLAB matrices in "data" folder. (similar to [UCI BP dataset](https://archive.ics.uci.edu/ml/datasets/Cuff-Less+Blood+Pressure+Estimation))
+ 1-
+ - Download [MIMIC II dataset](https://archive.physionet.org/mimic2/ ) (BP, ECG, PPG) and save as MATLAB matrices in "data" folder. (similar to [UCI BP dataset](https://archive.ics.uci.edu/ml/datasets/Cuff-Less+Blood+Pressure+Estimation))
+ 
+ or,
+ 
+ - Use the sample dataset provided in data folder and load it using the following code:
+ 
+ ```
+>>> import pickle
+>>> with open('data_sample_BP_PPG.pkl', 'rb') as f:
+...   [data] = pickle.load(f)
+ ```
  
  2- Run featureExtractor.py
  
@@ -27,7 +39,7 @@ Please install the following Python (3.8) libraries:
  4- Run BPEstimation.py to fit and test machine learning based models.
 
 ## Plots
-The results of BP estimation using Random Forest model (10-fold corss validation):
+The results of BP estimation using Random Forest model (10-fold cross validation, MIMIC II dataset):
 
 **Systolic BP**: corr=0.79, MAE=11.12 mmHg, STD=9.96 mmHg
 
