@@ -16,7 +16,7 @@ part_id = 1
 save_name = "features_{}.csv".format(part_id)
 # Address of data
 data_path = "data"
-
+# Loading MIMIC II Dataset
 try:
     data_mat = mat73.loadmat(data_path + '/Part_{}.mat'.format(part_id))
     if part_id==1:
@@ -37,6 +37,10 @@ except:
         data = data_mat['Part_3'][0]
     if part_id==4:
         data = data_mat['Part_4'][0]
+# or Loading the sample dataset
+
+# with open('data_sample_BP_PPG.pkl', 'rb') as f:
+# ...   [data] = pickle.load(f)
 
 # Read all of subjects signals
 
